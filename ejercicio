@@ -1,0 +1,49 @@
+#José Luis Macías grupo 03
+#Programa que pide un número y te da el día de la semana.
+
+def numeroParaDia(d):
+
+    if d == 1:
+
+        diaSem = str("Lunes")
+
+        return diaSem
+    else:
+        if d == 2:
+            diaSem = str("Martes")
+            return diaSem
+        else:
+            if d == 3:
+                diaSem = str ("Miércoles")
+                return diaSem
+            else:
+                if d == 4:
+                    diaSem = str("Jueves")
+                    return diaSem
+                else:
+                    if d == 5:
+                        diaSem = str("Viernes")
+                        return diaSem
+                    else:
+                        if d == 6:
+                            diaSem = str("Sábado")
+                            return diaSem
+                        else:
+                            if d == 7:
+                                diaSem = str("Domingo")
+                                return diaSem
+
+
+
+
+
+def main():
+
+    d = int(input("Escribe un número para saber a qué día de la semana corresponde: "))
+
+    diaSem = numeroParaDia(d)
+
+    print("El dia de la semana es ", diaSem)
+
+
+main()
